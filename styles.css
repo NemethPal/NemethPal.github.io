@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+a{
+    color: #ff0099;
+    text-decoration: underline;
+    font-family: 'Trispace', sans-serif;
+    font-size: 14px;
+}
+
+a:hover{
+    color: #ff88cf
+}
+
+body{
+    background-image: url("assets/topography.png")
+}
+
+nav{
+    background: #333333;
+    height: 55px;
+    width: 100%;
+    position: fixed;
+    display: inline;
+}
+
+#navBTN{
+    margin-right: 50%;
+}
+
+#logo{
+    height: 45px;
+    margin-left: 10%;
+    margin-top: 7px;
+    position: fixed;
+}
+
+
+nav ul li{
+
+    display: inline-block;
+    line-height: 50px;
+    margin: 0 20px;
+    margin-right: 20px; 
+   
+}
+
+ul{
+   
+    margin-left: 65%;
+    position: fixed;
+}
+
+
+#text1{
+    padding: 10%;
+}
+
+h1{
+    font-size: 53px;
+    font-weight: 600;
+    font-family: 'Merriweather', serif;
+}
+
+h3, .span1{
+    margin-top: 30px;
+    color: #ff0099;
+    font-size: 29px;
+    font-weight: 600;
+    font-family: 'Merriweather', serif;
+}
+
+h4, p{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Roboto Mono', monospace;
+}
+#line{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 95px;
+    margin-bottom: 50px;
+    text-align: center;  
+}
+
+h2{
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 55px;
+}
+
+
+
+.span1{
+    color: black;
+}
+
+@media(max-width: 1280px){
+    ul{
+   
+        margin-left: 50%;
+        position: fixed;   
+}
+
+
+@media(max-width: 940px){
+    ul{
+   
+        margin-left: 30%;
+        position: fixed;   
+}
+h1{
+    margin-top: 10%;
+}
+
+nav ul li{
+
+    display: inline-block;
+    line-height: 40px;
+    margin: 0 10px;
+    margin-right: 20px; 
+    margin-top: 7px;
+   
+}
+}
+}

@@ -1,1 +1,0 @@
-# NemethPal.github.io
