@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap');
+
+
+.mainLogo {
+    height: 18%;
+    width: auto;
+    display: block;
+    color: rgb(66, 66, 66);
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Fleur De Leah', cursive;
+    font-size: 80px;
+    margin-bottom: 0px;
+    margin-top: 35px;
+  }
+
+#navbar {
+	height: 84px;
+}
+
+.table {
+	display: table;   /* Allow the centering to work */
+	margin: 0 auto;
+}
+
+ul#horizontal-list {
+	min-width: 800px;
+	list-style: none;
+	padding-top: 20px;
+  padding-left: 0px;
+	}
+	ul#horizontal-list li {
+		display: inline;
+    margin-right: 0px;
+	}
+  
+  li a {
+    margin: 7%;
+    text-decoration: none;
+    color: rgb(43, 43, 43);
+    font-size: 23px;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  li a:hover {
+    color: rgb(255, 0, 0);
+  }
+
+  #indexPics {
+    margin-top: 100px;
+    display: block;
+  }
+
+  #indexPicsBottom {
+    margin-bottom: 100px;
+    visibility: hidden;
+  }
+
+/*OTHER*/ 
+
+.pizzaBlock {
+  margin: auto;
+  width: 40%;
+  border: 2px solid #9b9b9b;
+  padding: 10px;
+}
+
+.pizzaBlockText {
+  display: inline;
+  margin-left: 40%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #575757;
+}
+
+.pizzaText {
+  background-color: aqua;
+  margin-top: 0px;
+  padding: 3px;
+  
+}
+
+#ornamentLeftTop {
+  margin-right: auto;
+  margin-left: 0px;
+  display: block;
+  width: 15%;
+  position: fixed;
+}
+
+#ornamentRightTop {
+  right: 0px;
+  margin-left: auto;
+  margin-right: 0px;
+  display: block;
+  height: auto; 
+  width: 15%;
+  position: fixed;
+}
+
+#respMenuBTN {
+  display: none;
+}
+
+#respMenuCheckBox {
+  display: none;
+}
+
+#cartBTN {
+  background-color: #434343;
+  position: fixed;
+  width: 100%;
+  
+}
+
+#cartBTN {
+  background-color: #434343;
+}
+
+[class*="btn"] {
+  
+  box-shadow:none !important;
+  outline:none !important;
+}
+
+#cartData {
+  margin-top: 80px;
+}
+
+#order {
+  display: none;
+}
+
+#offcanvasTop {
+  background-color: rgba(250, 250, 250, 0.8);
+  backdrop-filter: blur(3px);
+}
+
+.modal-content {
+  background-color: rgba(255, 255, 255, 0.70);
+  backdrop-filter: blur(3px);
+  border-radius: 15px;
+  box-shadow: 0px 0px 75px 60px #888888;
+}
+
+.form-control{
+  background-color:  rgba(226, 242, 255, 0.1);
+  border: 1px solid #9c9c9c;
+  border-radius: 7px;
+  box-shadow:none !important;
+  outline:none !important;
+}
+
+.form-select {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  cursor:default;
+  box-shadow:none !important;
+  outline:none !important;
+}
+
+.modal-backdrop {
+  background-color: rgba(12, 12, 12, 0.0001);
+  backdrop-filter: blur(10px);
+}
+
+  #orderBTN001 {
+    margin-top: 200px;
+    margin-left: 300px;
+  }
+
+
+@media (min-width: 960px) {
+
+  #nav {
+    display: none;
+  }
+  }
+
+@media  (max-width: 960px) {
+
+  #nav {
+  
+    min-width: 100%;
+  }
+
+  #navbarSupportedContent {
+    position: static;
+  }
+
+  
+  
+  .mainLogo {
+    height: 18%;
+    width: auto;
+    display: none;
+    color: rgb(66, 66, 66);
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Fleur De Leah', cursive;
+    font-size: 50px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    }
+
+    #ornamentLeftTop {
+      visibility: collapse;
+    }
+    
+    #ornamentRightTop {
+      visibility: collapse;
+    }
+
+    #menuTable {
+      font-size: 13px;
+    } 
+  
+}
+
+@media (max-width: 760px) {
+  .infoTd {
+    display: none  
+}
+
+
+
+
+
+}
