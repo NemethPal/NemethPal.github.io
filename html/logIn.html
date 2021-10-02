@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria Bravissima</title>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+        integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/1d9bfeacd0.js" crossorigin="anonymous"></script>
+</head>
+
+<body style="background-color: rgb(199, 199, 199);">
+
+    <div class="container" style="margin-top: 10%">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4" style="background-color: rgb(255, 255, 255)">
+                <form style="margin: 35px;">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email cím</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text"></div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Jelszó</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div>
+
+                    </div>
+                    <button type="submit" class="btn btn-primary">Bejelentkezés</button>
+                </form>
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ORDER FORM START-->
+
+
+    <div class="modal fade" id="exampleModalToggle1" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+
+
+                    <h5 class="modal-title" id="exampleModalToggleLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    A ... sikeresen hozzáadva a kosárhoz.
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"
+                        data-bs-dismiss="modal">Megrendelés</button>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">Vásárlás
+                        folytatása</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+
+
+                    <h5 class="modal-title" id="exampleModalToggleLabel2">Szállítási adatok</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+
+                    <form class="row g-3">
+                        <div class="col-md-12">
+                            <label for="name" class="form-label">Név</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="col-md-12">
+                            <label for="email" class="form-label">Email cím</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+
+                        <div class="col-md-12">
+                            <label for="phoneNumber" class="form-label">Telefonszám</label>
+                            <input type="number" class="form-control" id="phoneNumber">
+                        </div>
+                        <div class="col-md-12">
+
+                            <div class="col-md-12">
+                                <label for="inputState" class="form-label">Település</label>
+                                <select id="inputState" class="form-select">
+                                    <option selected>Válasszon</option>
+                                    <option>3588 Hejőkürt Lidl logisztika</option>
+                                    <option>3579 Kesznyéten</option>
+                                    <option>4030 Polgár cigánysor</option>
+                                    <option>4090 Polgár</option>
+                                    <option>3586 Sajóörös</option>
+                                    <option>3599 Sajószöged</option>
+                                    <option>3587 Tiszapalkonya</option>
+                                    <option>3858 Tiszaszederkény</option>
+                                    <option>3580 Tiszaújváros, TVK V. kapu</option>
+                                    <option>3580 Tiszaújváros</option>
+                                    <option>3580 Tiszaújváros - Erőmű lakótelep</option>
+                                </select>
+                            </div>
+
+                        </div>
+                        <div class="col-12">
+                            <label for="street" class="form-label">Utca</label>
+                            <input type="text" class="form-control" id="street" placeholder="1234 Main St">
+                        </div>
+                        <div class="col-12">
+                            <label for="houseNumber" class="form-label">Házszám</label>
+                            <input type="text" class="form-control" id="houseNumber"
+                                placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="col-md-2">
+                            <label for="level" class="form-label">Emelet</label>
+                            <input type="text" class="form-control" id="level">
+                        </div>
+                        <div class="col-md-2">
+                            <label for="door" class="form-label">Ajtó</label>
+                            <input type="text" class="form-control" id="door">
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                                    style="height: 100px"></textarea>
+                                <label for="floatingTextarea2">Megjegyzés</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle3"
+                        data-bs-toggle="modal">Rendben</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+
+
+                    <h5 class="modal-title" id="exampleModalToggleLabe3">Adatok ellenőrzése</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    DATA
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"
+                        data-bs-dismiss="modal">Vissza</button>
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle4" data-bs-toggle="modal"
+                        data-bs-dismiss="modal">Megrendelés</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="modal fade" id="exampleModalToggle4" aria-hidden="true" aria-labelledby="exampleModalToggleLabe4"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+
+
+                    <h5 class="modal-title" id="exampleModalToggleLabe3">Sikeres rendelés!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Köszönjük a megrendelést! Várható szállítási idő: 35-45 perc.
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle5" data-bs-toggle="modal"
+                        data-bs-dismiss="modal">Bezár</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle1" role="button">Megrendelés</a>
+
+
+<!-- ORDER FORM END -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
